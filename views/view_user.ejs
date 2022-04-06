@@ -1,0 +1,43 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--/include header-->
+
+    <!--Main site-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-content">
+                <div class="filter">
+                    <a href="/"><i class="fa-solid fa-angles-left"></i>All user</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">View User</h2>
+
+        </div>
+
+        <div class="div1"> 
+            <table class=" table1">
+
+          <tr><td>  <label> Nama Lengkap = <%= user.nama %></label> </td></tr>
+          <tr><td>  <label> Jenis Kelamin = <%= user.jeniskelamin %> </label></td></tr>
+          <tr><td>  <label> Usia: <%= user.usia %> Tahun</label> </td></tr>
+          <tr><td>  <label> Tanggal Lahir: <%= newDate %></label> </td></tr>
+          <tr><td>  <label> Suhu: <%= user.suhu %> derajat</label> </td></tr>
+          <tr><td>  <label> No. KTP : <%= user.noktp %></label> </td></tr>
+          <tr><td>  <label> No. HP : <%= user.nohp %></label> </td></tr>
+          <tr><td>  <label> Alamat: <%= user.alamat %></label> </td></tr>
+          <tr><td>  <label> E-mail: <%= user.email %></label> </td></tr>
+          <tr><td>  <label> Keluhan: <%= user.keluhan %></label> </td></tr>
+          <tr><td>  <label> Penyakit Penyerta: <%= user.penyakit %></label> </td></tr>
+          <tr><td>  <label> Hasil SWAB: <%= user.hasil %> </label> </td></tr>
+
+        </table>
+        </div>
+    
+    </main>    
+    <!--/Main site-->
+
+<!--include footer-->
+<%-include('include/_footer')%>
+<!--/include footer--> 
